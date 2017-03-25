@@ -1,11 +1,129 @@
+ <!--
+ Requirements:
+	Plot summary
+	Character analysis
+	Author biography
+	Links to related sites
+	Book review
+	Interactive element
+ -->
  <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>I, Robot</title>
-  <link rel="stylesheet" href="interface.css" type="text/css">
-  </head>
-  <body>
-	test
-  </body>
+	<head>
+		<meta charset="UTF-8">
+		<title>I, Robot</title>
+		<link rel="stylesheet" href="interface.css" type="text/css">
+		<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/fantasque-sans-mono" type="text/css"/>
+		<link rel="stylesheet" type="text/css" href="flaticon/flaticon.css">
+	</head>
+	<body>
+		<div id="header">
+			<h1>I, Robot</h1>
+			<h2>by Isaac Asimov</h2>
+			<ul class="tab">
+				<li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'plot')">Plot Summary</a></li>
+				<li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'character')">Character Analysis</a></li>
+				<li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'author')">Author Biography</a></li>
+				<li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'related')">Related Websites</a></li>
+				<li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'review')">Review</a></li>
+				<li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'interactive')">Interactive Element</a></li>
+			</ul>
+		</div>
+		<div id="content">
+			<div id="plot" class="tabcontent">
+				<h3>Plot Summary</h3>
+				<p>I, Robot consists of nine short stories about robot-human interaction, each told by Susan Calvin, robopsychologist for US Robots and Mechanical Men, Inc. Each story describes some problem that happened with a robot, which was then explained or solved by Calvin and her coworkers.</p>
+				<div id="plotButtonHolder">
+					<div class="plotButton" onclick="openPlot('robbie')">
+						<img src="svg/girl.svg">
+						<h4>Robbie</h4>
+					</div>
+					<div class="plotButton" onclick="openPlot('runaround')">
+						<img src="svg/planet.svg">
+						<h4>Runaround</h4>
+					</div>
+					<div class="plotButton" onclick="openPlot('reason')">
+						<img src="svg/beam.svg">
+						<h4>Reason</h4>
+					</div>
+					<div class="plotButton" onclick="openPlot('catchthatrabbit')">
+						<img src="svg/asteroid.svg">
+						<h4 class="longTitle">Catch that Rabbit</h4>
+					</div>
+					<div class="plotButton" onclick="openPlot('liar')">
+						<img src="svg/brain.svg">
+						<h4>Liar</h4>
+					</div>
+					<div class="plotButton" onclick="openPlot('littlelostrobot')">
+						<img src="svg/radiation.svg">
+						<h4 class="longTitle">Little Lost Robot</h4>
+					</div>
+					<div class="plotButton" onclick="openPlot('escape')">
+						<img src="svg/spaceship.svg">
+						<h4>Escape</h4>
+					</div>
+					<div class="plotButton" onclick="openPlot('evidence')">
+						<img src="svg/vote.svg">
+						<h4>Evidence</h4>
+					</div>
+					<div class="plotButton" onclick="openPlot('theevitableconflict')">
+						<img src="svg/machine.svg">
+						<h4 class="longTitle">The Evitable Conflict</h4>
+					</div>
+				</div>
+				<div class="plotBox" id="setting">
+					<h3>Setting</h3>
+					<p class="plotcontent robbie">The year is 1998. The robot Robbie is a caretaker for a young girl named Gloria Weston, and is, by all accounts, a good caretaker.</p>
+					<p class="plotcontent runaround">In 2003, once robots gained the ability to move and speak like people, they were banned from Earth. Thus, they are now built for use in space. One such robot, Speedy, is on Mercury, along with scientists Gregory Powell and Michael Donovan.</p>
+					<p class="plotcontent reason"></p>
+					<p class="plotcontent catchthatrabbit"></p>
+					<p class="plotcontent liar"></p>
+					<p class="plotcontent littlelostrobot"></p>
+					<p class="plotcontent escape"></p>
+					<p class="plotcontent evidence"></p>
+					<p class="plotcontent theevitableconflict"></p>
+				</div>
+				<div class="plotBox" id="conflict">
+					<h3>What Went Wrong?</h3>
+					<p class="plotcontent robbie">Gloria's mother does not want Gloria interacting with Robbie - she fears he may hurt her or make her unable to interact with humans. She then convinces her husband of the same thing, and they get rid of Robbie.</p>
+					<p class="plotcontent runaround">Powell and Donovan sent Speedy to gather some selenium to fix their photo-cell banks. However, Speedy has not come back and in fact is just circling around the pool of selenium. The two mine over to the pools and witness Speedy malfunctioning.</p>
+					<p class="plotcontent reason"></p>
+					<p class="plotcontent catchthatrabbit"></p>
+					<p class="plotcontent liar"></p>
+					<p class="plotcontent littlelostrobot"></p>
+					<p class="plotcontent escape"></p>
+					<p class="plotcontent evidence"></p>
+					<p class="plotcontent theevitableconflict"></p>
+				</div>
+				<div class="plotBox" id="resolution">
+					<h3>How Was It Solved?</h3>
+					<p class="plotcontent robbie">To try to make Gloria feel better, her parents take her to a robot factory to show that robots are only machines. However, Gloria finds Robbie and tries to run to him, and is almost killed by a tractor. However, since Robbie is programmed to protect Gloria, he saves her life and is returned to his role as caretaker.</p>
+					<p class="plotcontent runaround">Powell and Donovan consider the laws of robotics and realize there is a conflict. The robot's desire to obey orders (the second law) and protect itself (the third law) are in conflict, as the selenium pool is dangerous. Thus, the first law must be brought into play - a human must be in danger. Powell runs out into the sun and threatens that he will die unless Speedy helps, and Speedy snaps out of his confusion and saves Powell.</p>
+					<p class="plotcontent reason"></p>
+					<p class="plotcontent catchthatrabbit"></p>
+					<p class="plotcontent liar"></p>
+					<p class="plotcontent littlelostrobot"></p>
+					<p class="plotcontent escape"></p>
+					<p class="plotcontent evidence"></p>
+					<p class="plotcontent theevitableconflict"></p>
+				</div>
+			</div>
+			<div id="character" class="tabcontent">
+				<h3>Character Analysis</h3>
+			</div>
+			<div id="author" class="tabcontent">
+				<h3>Author Biography</h3>
+			</div>
+			<div id="related" class="tabcontent">
+				<h3>Related Websites</h3>
+			</div>
+			<div id="review" class="tabcontent">
+				<h3>Review</h3>
+			</div>
+			<div id="interactive" class="tabcontent">
+				<h3>Interactive Element</h3>
+			</div>
+		</div>
+		<script type="text/javascript" src="main.js"></script>
+	</body>
 </html>

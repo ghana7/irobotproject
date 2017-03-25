@@ -1,0 +1,107 @@
+html, body {
+	font-family: 'FantasqueSansMonoRegular';
+	font-weight: normal;
+	font-style: normal;
+}
+#header {
+	background-color:#aaa;
+	position:absolute;
+	width:100%;
+	top:0;
+	left:0;
+}
+#content {
+	position:absolute;
+	width:100%;
+	top:173px;
+	left:0;
+}
+h1, h2 {
+	text-align:center;
+}
+#plotButtonHolder {
+	height:10vw;
+}
+.plotButton {
+	width: 8vw;
+	height: 8vw;
+	margin-left:1vw;
+	margin-right:1.2vw;
+	margin-top:1vw;
+	margin-bottom:1vw;
+	border: 1px solid #ccc;
+	display:inline-block;
+	overflow:hidden;
+	transition:0.3s;
+	text-align:center;
+}
+.plotButton:hover {
+	height: 10vw;
+	margin-top:0;
+	margin-bottom:0;
+	transition:0.3s;
+}
+.plotButton img {
+	width: 75%;
+	display: block;
+	margin:1vw;
+}
+.plotButton .longTitle {
+	font-size:75%;
+}
+.plotBox {
+	width: 30vw;
+	height: 15vw;
+	margin-left:1vw;
+	margin-right:1vw;
+	border: 1px solid #ccc;
+	display:inline-block;
+	overflow:hidden;
+	text-align:center;
+}
+.plotcontent {
+	display:none;
+	font-size:80%;
+}
+ /* Style the list */
+ul.tab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+}
+
+/* Float the list items side by side */
+ul.tab li {
+	float: left;
+}
+
+/* Style the links inside the list items */
+ul.tab li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of links on hover */
+ul.tab li a:hover {
+	background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+ul.tab li a:focus, .active {
+	background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+}
