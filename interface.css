@@ -19,6 +19,9 @@ html, body {
 h1, h2 {
 	text-align:center;
 }
+.bookTitle {
+	text-decoration:underline;
+}
 #plotButtonHolder {
 	height:10vw;
 }
@@ -34,6 +37,8 @@ h1, h2 {
 	overflow:hidden;
 	transition:0.3s;
 	text-align:center;
+	text-decoration: none;
+	color:black;
 }
 .plotButton:hover {
 	height: 10vw;
@@ -50,10 +55,11 @@ h1, h2 {
 	font-size:75%;
 }
 .plotBox {
-	width: 30vw;
+	width: 29vw;
 	height: 15vw;
 	margin-left:1vw;
 	margin-right:1vw;
+	padding: 0.5vw;
 	border: 1px solid #ccc;
 	display:inline-block;
 	overflow:hidden;
@@ -62,6 +68,52 @@ h1, h2 {
 .plotcontent {
 	display:none;
 	font-size:80%;
+}
+.characterBox {
+	width: 20vw;
+	height: 25vw;
+	margin-left:1vw;
+	margin-right:1vw;
+	padding: 0.5vw;
+	border: 1px solid #ccc;
+	display:inline-block;
+	overflow:hidden;
+	text-align:center;
+}
+#author img {
+	width: 25vw;
+}
+#authorText {
+	width: 70vw;
+	height: 36vw;
+	border: 1px solid #ccc;
+	display:inline-block;
+	overflow:hidden;
+	margin-left:1vw;
+	margin-right:1vw;
+	font-size:125%;
+}
+
+#related a:link {
+	color: #333;
+}
+#related a:visited {
+	color: #666;
+}
+#related a:hover {
+	color: #333;
+	font-weight:bold;
+}
+.quizAnswers li {
+	width: 10vw;
+}
+.quizAnswers li:hover {
+	text-decoration: line-through;
+}
+
+.quizAnswers .correct:hover {
+	font-weight:bold;
+	text-decoration: none;
 }
  /* Style the list */
 ul.tab {

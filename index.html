@@ -26,7 +26,7 @@
 				<li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'author')">Author Biography</a></li>
 				<li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'related')">Related Websites</a></li>
 				<li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'review')">Review</a></li>
-				<li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'interactive')">Interactive Element</a></li>
+				<li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'interactive')">Quiz</a></li>
 			</ul>
 		</div>
 		<div id="content">
@@ -34,94 +34,154 @@
 				<h3>Plot Summary</h3>
 				<p>I, Robot consists of nine short stories about robot-human interaction, each told by Susan Calvin, robopsychologist for US Robots and Mechanical Men, Inc. Each story describes some problem that happened with a robot, which was then explained or solved by Calvin and her coworkers.</p>
 				<div id="plotButtonHolder">
-					<div class="plotButton" onclick="openPlot('robbie')">
+					<a href="javascript:void(0)" class="plotButton" onclick="openPlot('robbie')">
 						<img src="svg/girl.svg">
 						<h4>Robbie</h4>
-					</div>
-					<div class="plotButton" onclick="openPlot('runaround')">
+					</a>
+					<a href="javascript:void(0)" class="plotButton" onclick="openPlot('runaround')">
 						<img src="svg/planet.svg">
 						<h4>Runaround</h4>
-					</div>
-					<div class="plotButton" onclick="openPlot('reason')">
+					</a>
+					<a href="javascript:void(0)" class="plotButton" onclick="openPlot('reason')">
 						<img src="svg/beam.svg">
 						<h4>Reason</h4>
-					</div>
-					<div class="plotButton" onclick="openPlot('catchthatrabbit')">
+					</a>
+					<a href="javascript:void(0)" class="plotButton" onclick="openPlot('catchthatrabbit')">
 						<img src="svg/asteroid.svg">
 						<h4 class="longTitle">Catch that Rabbit</h4>
-					</div>
-					<div class="plotButton" onclick="openPlot('liar')">
+					</a>
+					<a href="javascript:void(0)" class="plotButton" onclick="openPlot('liar')">
 						<img src="svg/brain.svg">
 						<h4>Liar</h4>
-					</div>
-					<div class="plotButton" onclick="openPlot('littlelostrobot')">
+					</a>
+					<a href="javascript:void(0)" class="plotButton" onclick="openPlot('littlelostrobot')">
 						<img src="svg/radiation.svg">
 						<h4 class="longTitle">Little Lost Robot</h4>
-					</div>
-					<div class="plotButton" onclick="openPlot('escape')">
+					</a>
+					<a href="javascript:void(0)" class="plotButton" onclick="openPlot('escape')">
 						<img src="svg/spaceship.svg">
 						<h4>Escape</h4>
-					</div>
-					<div class="plotButton" onclick="openPlot('evidence')">
+					</a>
+					<a href="javascript:void(0)" class="plotButton" onclick="openPlot('evidence')">
 						<img src="svg/vote.svg">
 						<h4>Evidence</h4>
-					</div>
-					<div class="plotButton" onclick="openPlot('theevitableconflict')">
+					</a>
+					<a href="javascript:void(0)" class="plotButton" onclick="openPlot('theevitableconflict')">
 						<img src="svg/machine.svg">
 						<h4 class="longTitle">The Evitable Conflict</h4>
-					</div>
+					</a>
 				</div>
 				<div class="plotBox" id="setting">
 					<h3>Setting</h3>
 					<p class="plotcontent robbie">The year is 1998. The robot Robbie is a caretaker for a young girl named Gloria Weston, and is, by all accounts, a good caretaker.</p>
-					<p class="plotcontent runaround">In 2003, once robots gained the ability to move and speak like people, they were banned from Earth. Thus, they are now built for use in space. One such robot, Speedy, is on Mercury, along with scientists Gregory Powell and Michael Donovan.</p>
-					<p class="plotcontent reason"></p>
-					<p class="plotcontent catchthatrabbit"></p>
-					<p class="plotcontent liar"></p>
-					<p class="plotcontent littlelostrobot"></p>
-					<p class="plotcontent escape"></p>
-					<p class="plotcontent evidence"></p>
-					<p class="plotcontent theevitableconflict"></p>
+					<p class="plotcontent runaround">In 2003, once robots gained the ability to move and speak like people, they were banned from Earth. Thus, they are now built for use in space. In 2015, one such robot, Speedy, is on Mercury, along with scientists Gregory Powell and Michael Donovan.</p>
+					<p class="plotcontent reason">One half year after the events of "Runaround", Powell and Donovan are now on Solar Station #5 managing an energy beam sent to Earth and a new QT model robot designed to control this station.</p>
+					<p class="plotcontent catchthatrabbit">Another half year after "Reason", Powell and Donovan are now testing an asteroid mining robot named Dave. Dave is comprised of a supervisor robot and six smaller child robots who are ordered around by Dave.</p>
+					<p class="plotcontent liar">In 2021, a robot named Herbie has been manufactured that accidentally received the ability to read minds. It has read the minds of many people at US Robots. For example, it tells Susan Calvin that her love interest, Milton Ashe, is interested in her.</p>
+					<p class="plotcontent littlelostrobot">In 2029, Calvin is at a government research station in space. She meets with Major-General Kallner, who invited both Calvin and Bogert there for help.</p>
+					<p class="plotcontent escape">US Robots' competitor, Consolidated, wants to hire them to process data about a hyperatomic drive. It is rumored that Consolidated's supercomputer was broken by the data. </p>
+					<p class="plotcontent evidence">In 2032, life on Earth has changed. Peoples have joined together into massive regions controlled by supercomputers called the Machines. One man, Stephen Byerley, is running for mayor of an unspecified city.</p>
+					<p class="plotcontent theevitableconflict">In 2052, Stephen Byerley, possible robot and now World Coordinator, and Susan Calvin are talking in his study.</p>
 				</div>
 				<div class="plotBox" id="conflict">
 					<h3>What Went Wrong?</h3>
 					<p class="plotcontent robbie">Gloria's mother does not want Gloria interacting with Robbie - she fears he may hurt her or make her unable to interact with humans. She then convinces her husband of the same thing, and they get rid of Robbie.</p>
 					<p class="plotcontent runaround">Powell and Donovan sent Speedy to gather some selenium to fix their photo-cell banks. However, Speedy has not come back and in fact is just circling around the pool of selenium. The two mine over to the pools and witness Speedy malfunctioning.</p>
-					<p class="plotcontent reason"></p>
-					<p class="plotcontent catchthatrabbit"></p>
-					<p class="plotcontent liar"></p>
-					<p class="plotcontent littlelostrobot"></p>
-					<p class="plotcontent escape"></p>
-					<p class="plotcontent evidence"></p>
-					<p class="plotcontent theevitableconflict"></p>
+					<p class="plotcontent reason">The robot does not believe that humans and Earth exist, because robots are obviously better than humans. Instead, it worships the energy converter on the ship as "the Master." This robot spreads its ideas to the rest of the robots and they all begin to disobey humans. Without human control, the earth may be destroyed by a coming electron storm's interference with the beam.</p>
+					<p class="plotcontent catchthatrabbit">Whenever humans are not around, Dave does not function. Powell and Donovan determine that whenever there is an emergency, Dave and the robots dance aroung instead of working.</p>
+					<p class="plotcontent liar">Herbie tells Peter Bogert a falsehood - that director of research Alfred Lanning is retiring and giving him his position. However, Lanning says this is not true. In addition, Calvin finds out that Milton Ashe is in fact getting married to another woman, one Herbie told her was Ashe's cousin.</p>
+					<p class="plotcontent littlelostrobot">The government's special NS-2 robot has been lost in a ship of regular NS-2s. The robot is special because it does not have the full first law programmed - it is allowed to let humans die by inaction. Calvin, fearing robots without the first law, wants the ship destroyed. However, Kallner wants the robot to be found.</p>
+					<p class="plotcontent escape">The US Robots employees suspect that this is a plot by Consolidated to break their computer. Calvin has a plan to give the data to their supercomputer, which has a personality, unlike Consolidated's, in small parts to avoid overload. It appears to work perfectly, and the computer builds a hyperatomic drive spaceship.</p>
+					<p class="plotcontent evidence">Francis Quinn, a behind-the-scenes politician, starts a rumor that Byerley is a robot (since robots are still not allowed on Earth.) Calvin plans to see if Byerley is able to break the laws of robotics. If he does, then he is a human. If he does not, he is either a robot or just a decent human. </p>
+					<p class="plotcontent theevitableconflict">Byerley explains to Calvin that the world economy, now run by Machines, is having issues, and suspects a Machine revolt. However, the Machines are too advanced for human diagnostics, as they were built by computers. In addition, Byerley tells Calvin about the Society for Humanity, a group of people against robots. </p>
 				</div>
 				<div class="plotBox" id="resolution">
 					<h3>How Was It Solved?</h3>
 					<p class="plotcontent robbie">To try to make Gloria feel better, her parents take her to a robot factory to show that robots are only machines. However, Gloria finds Robbie and tries to run to him, and is almost killed by a tractor. However, since Robbie is programmed to protect Gloria, he saves her life and is returned to his role as caretaker.</p>
 					<p class="plotcontent runaround">Powell and Donovan consider the laws of robotics and realize there is a conflict. The robot's desire to obey orders (the second law) and protect itself (the third law) are in conflict, as the selenium pool is dangerous. Thus, the first law must be brought into play - a human must be in danger. Powell runs out into the sun and threatens that he will die unless Speedy helps, and Speedy snaps out of his confusion and saves Powell.</p>
-					<p class="plotcontent reason"></p>
-					<p class="plotcontent catchthatrabbit"></p>
-					<p class="plotcontent liar"></p>
-					<p class="plotcontent littlelostrobot"></p>
-					<p class="plotcontent escape"></p>
-					<p class="plotcontent evidence"></p>
-					<p class="plotcontent theevitableconflict"></p>
+					<p class="plotcontent reason">The QT robot keeps humans away from the controls during the storm. However, nothing is destroyed - the robot successfully controlled the beam as a form of worship of "the Master." Thus, the station can still be run despite the controller robot not believing in Earth.</p>
+					<p class="plotcontent catchthatrabbit">Powell and Donovan cause a cave in to study Dave's actions. They become trapped and Dave is still malfunctioning. Powell decides to shoot one of the child robots, and Dave begins to work again and save them. The reason for the malfunction was simply overload - Dave could not handle controlling all six robots at once.</p>
+					<p class="plotcontent liar">Calvin determines that Herbie lies because of the first law: a robot cannot harm a human, which includes hurting feelings. However, still mad about the lies, she tells Herbie a paradox and he goes insane, shutting down.</p>
+					<p class="plotcontent littlelostrobot">Calvin begins a series of tests to find robots without the first law. However, the modified NS-2 still chooses to pass the tests to stay hidden, or convinces the other robots to not save the human in order to save future humans. Calvin uses a third test with a fake killing agent, and the modified robot jumps out to save her. That robot, along with all other modified robots, are destroyed. </p>
+					<p class="plotcontent escape">Powell and Donovan are chosen to test the spaceship, but the spaceship has no controls or engine. However, while they are inspecting the ship, they are locked inside and thrown into space. They then temporarily die on the spaceship. After Powell and Donovan are brought back, Calvin explains the issue. The supercomputer knew the riders would die temporarily, and since that partially violated the first law, it became a practical joker to deal with the issues.</p>
+					<p class="plotcontent evidence">Once the rumor becomes public, all of Byerley's public events are about the robot scandal. Byerley invites once man on stage who insults him for being a robot, and then Byerley hits him. Byerley wins the election because the only issue was his humanity, and he proved that, unless the man he hit was also a robot. This second question is never answered.</p>
+					<p class="plotcontent theevitableconflict">Calvin knows that all robots obey the three laws, so she comes up with an explanation: since the Machines work for humanity, the first law becomes about harming humanity. Thus, the Machines are causing issues to bring shame to those in power who are members of the Society for Humanity. By doing this, they knock those who hurt humanity out of power.</p>
 				</div>
 			</div>
 			<div id="character" class="tabcontent">
 				<h3>Character Analysis</h3>
+				<div class="characterBox">
+					<h3>Susan Calvin</h3>
+					<p>Susan Calvin is the robopyschologist for US Robots and Mechanical Men, Inc., who solves problems related to robots malfunctioning and not following the three laws correctly. As a worker, she is incredibly intelligent and is almost always the one to solve a problem. As a person, she is very cold and emotionless, almost like a robot herself, and in fact many times speaks of her adoration for robots. </p>
+				</div>
+				<div class="characterBox">
+					<h3>Powell and Donovan</h3>
+					<p>Gregory Powell and Michael Donovan are expert robot technicians who also work for US Robots. They are described as the best workers other than Calvin at US Robots, but have a different attitude than her. They are not as cold and calculated as Calvin, and instead are more emotional and sometimes humorous. Of the two, Powell is calmer while Donovan is more easily angered.</p>
+				</div>
+				<div class="characterBox">
+					<h3>Stephen Byerley</h3>
+					<p>Stephen Byerley is a lawyer and politician seen in the later parts of the novel. He is such a good human and worker that it is suspected that he may be a robot. Since the only way to tell if someone is a robot or not without intrustive investigation is by their actions, it is impossible to tell whether Byerley is an average robot or good human. This question shows us the view of robots as simply better people.</p>
+				</div>
+				<div class="characterBox">
+					<h3>Dr. Alfred Lanning</h3>
+					<p>Alfred Lanning is the Director of Research at US Robots, and is a boss or father figure in the story. He is the one to order people to fix a problem instead of solving it himself. However, it is known that he is competent himself, as he has a doctorate and was the one who inspired Susan Calvin to study robotics.</p>
+				</div>
 			</div>
 			<div id="author" class="tabcontent">
 				<h3>Author Biography</h3>
+				
+				<div id="authorText">
+					<p>Isaac Asimov was born on January 2nd, 1920, in Petrovichi, Russia. When Asimov was very young, his family moved to Brooklyn, New York. At the age of 15 he graduated high school and went to Columbia University for the Bachelor's, Master's, and Doctorate of Science. In 1955, he became an associate professor at Boston University, and later became a full professor. Meanwhile, he published his first short story, "Marooned Off Vesta," in 1938, and his first novel, "Pebble in the Sky," in 1950.</p>
+					<p>Asimov was known for being a very prolific writer, having written over 500 books in his life. He did not just write science fiction, dabbling in nonfiction and religion, and writing his own autobiography. Asimov was a very focused and single-minded writer, having to be forced to take breaks and vacations by his family. He cited this focus as the reason for his prolific writing, saying, “If you want to be a prolific writer, you have to be a single-minded, driven, non-stop person. Sounds horrible, doesn't it? Well, then, concentrate on being a good writer, and leave prolific for those poor souls who can't help it.”</p>
+					<p>Asimov died on April 6, 1992 from heart and kidney failure. He was 72 years old at the time. Asimov's ideas about the future have continued to influence both writers and scientists to this day.</p>
+				</div>
+				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Isaac.Asimov01.jpg/800px-Isaac.Asimov01.jpg">
 			</div>
 			<div id="related" class="tabcontent">
 				<h3>Related Websites</h3>
+				<ul>
+					<li><a href="https://www.theguardian.com/childrens-books-site/2016/jun/30/i-robot-isaac-asimov-review">Review of I, Robot from The Guardian</a></li>
+					<li><a href="http://www.asimovreviews.net/Books/Book002.html">Review of I, Robot from an Asimov fan website</a></li>
+					<li><a href="http://www.biography.com/people/isaac-asimov-9190737">Biography of Isaac Asimov</a></li>
+					<li><a href="http://www.nytimes.com/books/97/03/23/lifetimes/asi-v-fair.html">Isaac Asimov's prediction for the 2014 World's fair</a></li>
+					<li><a href="http://www.chicagotribune.com/news/columnists/kass/ct-robots-asimov-kass-0113-20170112-column.html">An opinion piece defending Asimov's rules for robots</a></li>
+				</ul>
 			</div>
 			<div id="review" class="tabcontent">
 				<h3>Review</h3>
+				<p>Overall, I enjoyed <span class="bookTitle">I, Robot</span>. It had a different perspective than other science fiction books in that it did not focus on a world-end scenario or chaos caused by the robot uprising. In contrast, the robots were extremely effective, often better than humans, and did not cause many issues. Most issues with robots were in some way caused by humans. Even when the robots literally took over the world, it was in a peaceful manner and they were designed to help humans. I prefer this idea over just fearing the robot uprising blindly, because it makes more sense - we built robots, so we will be able to prevent them from wreaking havoc.</p>
+				<p>I especially liked the idea of the three laws of robotics as means to control robots. It shows that with foresight and basic rules, essentially all potential world-ending issues can be solved with a simple "don't make your robots kill people, alright?" Once again, I found it more realistic than an apocalyptic fearful view of the robotic "takeover." For these reasons, I enjoyed <span class="bookTitle">I, Robot</span> more than any other science fiction book I have read.</p>
 			</div>
 			<div id="interactive" class="tabcontent">
-				<h3>Interactive Element</h3>
+				<h3>Quiz</h3>
+				<span class="quizQuestion">What was the name of the robot in "Runaround"?</span>
+				<ul class="quizAnswers">
+					<li>Robbie</li>
+					<li class="correct">Speedy</li>
+					<li>Dave</li>
+					<li>Cutie</li>
+				</ul>
+				<span class="quizQuestion">Which law of robotics was modified in the NS-2 in "Little Lost Robot"?</span>
+				<ul class="quizAnswers">
+					<li class="correct">First</li>
+					<li>Second</li>
+					<li>Third</li>
+					<li>Fourth</li>
+				</ul>
+				<span class="quizQuestion">What is the name of US Robots' rival company?</span>
+				<ul class="quizAnswers">
+					<li>USSR Robots</li>
+					<li>Standard Robotics</li>
+					<li>Calvin Robots and Machinery</li>
+					<li class="correct">Consolidated</li>
+				</ul>
+				<span class="quizQuestion">Who is Susan Calvin's love interest?</span>
+				<ul class="quizAnswers">
+					<li>Alfred Lanning</li>
+					<li class="correct">Milton Ashe</li>
+					<li>Gregory Powell</li>
+					<li>Stephen Byerley</li>
+				</ul>
 			</div>
 		</div>
 		<script type="text/javascript" src="main.js"></script>
